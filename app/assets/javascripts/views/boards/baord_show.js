@@ -40,6 +40,7 @@ TrelloClone.Views.BoardShow = Backbone.CompositeView.extend({
       success: function () {
         that.model.lists().add(list);
         that.last++;
+        that.$('form')[0].reset();
       }
     });
   },

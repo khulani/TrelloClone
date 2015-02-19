@@ -28,6 +28,7 @@ TrelloClone.Views.List = Backbone.CompositeView.extend({
     card.save({},{
       success: function () {
         that.model.cards().add(card);
+        that.$('form')[0].reset();
       }
     });
   },

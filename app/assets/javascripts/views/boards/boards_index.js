@@ -21,6 +21,7 @@ TrelloClone.Views.BoardsIndex = Backbone.CompositeView.extend({
     board.save({},{
       success: function () {
         that.collection.add(board);
+        that.$('form')[0].reset();
       }
     });
   },
