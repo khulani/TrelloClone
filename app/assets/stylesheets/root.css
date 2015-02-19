@@ -1,0 +1,51 @@
+main {
+  margin: 20px;
+}
+
+.list-style {
+  float: left;
+  background: lightsteelblue;
+  padding: 5px;
+  border: black solid 1px;
+  border-radius: 10px;
+  margin: 10px 10px;
+  overflow: hidden;
+}
+
+.signing {
+  margin-left: 20px;
+}
+
+.list-style:hover {
+  background: rgba(176, 196, 222, 0.31);
+}
+
+.cards {
+  list-style-type: none;
+  min-height: 50px;
+}
+
+.quiet {
+  display: none;
+}
+
+.deletable:hover > .quiet {
+  display: inline;
+}
+
+.card-style {
+  background: #cedc98;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  min-height: 40px;
+}
+
+.card-style:hover {
+  background: lightyellow;
+}
+
+.dragging {
+  background: yellow;
+  transform: rotate(7deg);
+}

@@ -1,0 +1,7 @@
+<h1><%= board.escape('title') %></h1>
+<form class="list">
+  <input placeholder='Enter title...' type="text" name="title" value="">
+  <input type="hidden" name="board_id" value="<%= board.id %>">
+  <input type="submit" value="Add List">
+</form>
+<div class="lists"></div>

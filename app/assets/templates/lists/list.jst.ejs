@@ -1,0 +1,8 @@
+<h2><%= list.escape('title') %></h2>
+<button class='btn btn-danger list quiet'>x</button>
+<ul class="cards"></ul>
+<form class="card">
+  <input placeholder='Enter title...' type="text" name="title" value="">
+  <input type="hidden" name="list_id" value="<%= list.id %>">
+  <input type="submit" value="Add Card">
+</form>
